@@ -36,17 +36,17 @@ class Card extends React.Component {
   render() {
     return (
       <div class="card border-dark m-2 mx-auto" style={{ width: "18em" }}>
-        <div className="row">
+        <div className="row mx-auto">
           <img
-            class="card-img-top img-fluid col-sm pr-0"
+            class="card-img-top img-fluid col"
             src={this.props.avatar}
-            style={{ width: "5em" }}
+            style={{ width: "15em" }}
             alt=""
           />
           <img
-            class="card-img-top img-fluid col-sm pl-0"
+            class="card-img-top img-fluid col"
             src={this.props.avatarBack}
-            style={{ width: "5em" }}
+            style={{ width: "15em" }}
             alt=""
           />
         </div>

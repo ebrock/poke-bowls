@@ -21,7 +21,7 @@ class Results extends React.Component {
         ) : (
           <span />
         )}
-        <h1>Results</h1>
+        {/* <h1>Results</h1>
         <p>{this.props.flavorText}</p>
         <h4>Name</h4>
         <p>{this.props.name}</p>
@@ -37,7 +37,7 @@ class Results extends React.Component {
           {this.props.moves.map(r => (
             <li key={r}>{r}</li>
           ))}
-        </ol>
+        </ol> */}
       </div>
     );
   }
