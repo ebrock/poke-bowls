@@ -35,7 +35,7 @@ class Card extends React.Component {
 
   render() {
     return (
-      <div class="card border-dark m-2 mx-auto" style={{ width: "18em" }}>
+      <div className="card border-dark m-2 mx-auto" style={{ width: "18em" }}>
         <div className="row mx-auto">
           {/* <img
             class="card-img-top img-fluid col"
@@ -57,8 +57,8 @@ class Card extends React.Component {
             alt=""
           />
         </div>
-        <div class="card-body pt-0">
-          <h5 class="card-title">
+        <div className="card-body pt-0">
+          <h5 className="card-title">
             <b>{this.setProperName()}</b>
             <span className={this.getBadgeClasses()} style={{ width: "5em" }}>
               {this.props.type}
@@ -67,12 +67,15 @@ class Card extends React.Component {
               {this.props.id}
             </span>
           </h5>
-          <h6 class="card-subtitle mb-2 text-muted">{this.props.genus}</h6>
-          <p class="card-subtitle mb-2">{this.props.flavorText}</p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item active">Abilities</li>
+          <h6 className="card-subtitle mb-2 text-muted">{this.props.genus}</h6>
+          <p className="card-subtitle mb-2">{this.props.flavorText}</p>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item active">Abilities</li>
             {this.props.abilities.map(a => (
-              <li className="list-group-item list-group-item-light">
+              <li
+                key={a.ability.name}
+                className="list-group-item list-group-item-light"
+              >
                 {a.ability.name}
               </li>
             ))}

@@ -4,6 +4,7 @@ import Card from "./card";
 class Results extends React.Component {
   render() {
     const isLoaded = this.props.loaded;
+    const name = this.props.name;
     return (
       <div>
         {isLoaded ? (
@@ -18,6 +19,10 @@ class Results extends React.Component {
             habitat={this.props.habitat}
             abilities={this.props.abilities}
           />
+        ) : name ? (
+          <div className="center mt-3">
+            Could not find <b>{name}</b>
+          </div>
         ) : (
           <span></span>
         )}

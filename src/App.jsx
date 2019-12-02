@@ -34,7 +34,7 @@ class App extends React.Component {
     // Ajax call
     console.log("Ajax call...");
     let name = this.state.input;
-    name = name.toLowerCase();
+    name = name.toLowerCase().trim();
     fetch("https://pokeapi.co/api/v2/pokemon/" + name + "/")
       .then(res => res.json())
       .then(
@@ -86,7 +86,7 @@ class App extends React.Component {
             type: [],
             moves: [],
             avatar: "",
-            results: ["no such pokemon"],
+            results: "no such pokemon",
             avatarBack: "",
             id: "",
             flavorText: "",
