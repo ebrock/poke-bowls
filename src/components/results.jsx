@@ -19,7 +19,7 @@ class Results extends React.Component {
             abilities={this.props.abilities}
           />
         ) : (
-          <span />
+          <span></span>
         )}
         {/* <h1>Results</h1>
         <p>{this.props.flavorText}</p>

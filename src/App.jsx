@@ -77,15 +77,12 @@ class App extends React.Component {
                   this.setState({ genus });
                 }
               });
-              this.setState({
-                habitat: data.habitat.name
-              });
             });
         },
         error => {
           this.setState({
             loaded: false,
-            name: "",
+            name: this.state.input,
             type: [],
             moves: [],
             avatar: "",

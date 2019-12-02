@@ -37,7 +37,7 @@ class Card extends React.Component {
     return (
       <div class="card border-dark m-2 mx-auto" style={{ width: "18em" }}>
         <div className="row mx-auto">
-          <img
+          {/* <img
             class="card-img-top img-fluid col"
             src={this.props.avatar}
             style={{ width: "15em" }}
@@ -49,8 +49,15 @@ class Card extends React.Component {
             style={{ width: "15em" }}
             alt=""
           />
+        */}
+          <img
+            className="card-img-top img-fluid mt-2"
+            src={this.props.avatar}
+            style={{ width: "8em" }}
+            alt=""
+          />
         </div>
-        <div class="card-body">
+        <div class="card-body pt-0">
           <h5 class="card-title">
             <b>{this.setProperName()}</b>
             <span className={this.getBadgeClasses()} style={{ width: "5em" }}>
