@@ -1,11 +1,19 @@
 import React from "react";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 class NavBar extends React.Component {
   render() {
     return (
-      <nav className="navbar navbar-light bg-light">
-        <span className="navbar-brand mb-0 h1">Pokémon Search</span>
-      </nav>
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand>Pokémon Search</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbar-nav"></Navbar.Toggle>
+        <Navbar.Collapse id="navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="https://www.ericbrock.net">Home</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     );
   }
 }
